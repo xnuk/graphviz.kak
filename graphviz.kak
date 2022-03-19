@@ -37,7 +37,7 @@ define-command -hidden graphviz-indent-on-new-line %[
 ]
 
 
-define-command -hidden awk-trim-indent %{
+define-command -hidden graphviz-trim-indent %{
     try %{ execute-keys -draft <semicolon> <a-x> s ^\h+$ <ret> d }
 }
 
